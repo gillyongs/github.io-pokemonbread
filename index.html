@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>포켓몬빵 가챠 시뮬레이션</title>
+	<style>
+	</style>
+</head>
+<body>
+
+<h1>포켓몬빵 가챠 시뮬레이션</h1>
+<hr>
+
+<div>
+
+
+
+<div style="position: absolute;">
+
+<div style="position: relative;   left:250px; top:80px; "><img id="bbang" src="" width="400" height="400"  onclick="change()"></img>
+
+</div>
+
+</div>
+
+
+<div style="position: absolute;">
+
+<div style="position: relative; left:250px; top: 500px;"><a id='text'></a>
+
+</div>
+</div>
+
+
+
+<div style="position: absolute;">
+
+<div style="position: relative;"><img id="desf" height="558" weight="1000" src=""></img>
+
+</div>
+
+</div>
+
+
+
+
+
+
+
+	<script>
+
+var bread = Math.floor(Math.random() * 7)+1
+document.getElementById("bbang").src = "bread/"+bread+".jpg";
+
+
+function change(){
+	setTimeout("sticker()",2000);
+	document.getElementById("desf").src = "desfort.gif";
+	
+}
+function sticker(){
+
+    const name = ["0", "이상해씨", "이상해풀", "이상해꽃", "파이리", "리자드", "리자몽"
+    ,"꼬부기", "어니부기", "거북왕", "캐터피", "단데기", "버터풀", "뿔충이", "딱충이"
+    ,"독침붕", "구구", "피죤", "피죤투", "꼬렛", "레트라", "깨비참", "깨비드릴조", "아보","아보크"
+    , "피카츄", "라이츄", "모래두지", "고지", "니드런♀", "니드리나", "니드퀸", "니드런♂", "니드리노"
+    ,"니드킹", "삐삐", "픽시", "식스테일", "나인테일", "푸린", "푸크린", "주뱃", "골뱃", "뚜벅쵸"
+    ,"냄새꼬", "라플레시아", "파라스", "파라섹트", "콘팡", "도나리", "디그다", "닥트리오", "나옹"
+    ,"페르시온", "고라파덕", "골덕", "망키", "성원숭", "가디", "윈디", "발챙이", "슈륙챙이", "강챙이"
+    ,"캐이시", "윤겔라", "후딘","알통몬", "근육몬", "괴력몬", "모다피", "우츠동", "우츠보트","왕눈해", "독파리", "꼬마돌"
+    ,"데구리", "딱구리", "포니타", "날쌩마", "야돈", "야도란", "코일", "레어코일", "파오리","두두","두트리오"
+    ,"쥬쥬", "쥬레곤","질퍽이","질뻐기","셀러","파르셀","고오스","고우스트","팬텀","롱스톤","슬리프","슬리퍼"
+    ,"크랩","킹크랩","찌리리공","붐볼","아라리","나시","탕구리","텅구리","시라소몬","홍수몬","내루미","또가스"
+    ,"또도가스","뿔카노","코뿌리","럭키","덩쿠리","캥카","쏘드라","시드라","콘치","왕콘치","별가사리"
+    ,"아쿠스타","마임맨","스라크","루즈라", "에레브", "마그마", "쁘사이저", "켄타로스", "잉어킹", "갸라도스"
+    ,"라프라스","메타몽","이브이","샤미드","쥬피썬더","부스터","폴리곤","암나이트","암스타","투구","투구푸스"
+    ,"프테라","잠만보","프리져","썬더","파이어","미뇽","신뇽","망나뇽"]
+    
+
+
+	var s = Math.floor(Math.random() * 1554)+10
+	if(s==1560){
+		s=156;
+		document.getElementById("text").innerText = "No.150 뮤츠   (1/1553 확률!!!)";
+	}
+	else if(s==1561){
+		s=157;
+		document.getElementById("text").innerText = "No.151 뮤   (1/1553 확률!!!)";
+	}
+	else if(s==1562){
+		s=158;
+		document.getElementById("text").innerText = "No.150 뮤츠   (1/1553 확률!!!)";
+	}
+	else if(s==1563){
+		s=159;
+		document.getElementById("text").innerText = "No.151 뮤 (1/1553 확률!!!)";
+	}
+	else{
+		s=Math.floor(s/10);
+		if (s==150)
+			document.getElementById("text").innerText = "No.25 피카츄(?)";
+		else if(s==151)
+			document.getElementById("text").innerText = "No.1 이상해씨(?)";
+		else if(s==152)
+			document.getElementById("text").innerText = "No.2 파이리(?)";
+		else if(s==153)
+			document.getElementById("text").innerText = "No.3 꼬부기(?)";
+		else if(s==154)
+			document.getElementById("text").innerText = "담신믄 네모네모 미브미믜 저주메 걸렸습니다!";
+		else if(s==155)
+			document.getElementById("text").innerText = "No.145 잠만보(?)";
+		else
+		    document.getElementById("text").innerText = "No."+s+" "+name[s];
+	}
+
+
+	var k = "pokemon/"+s+".png";
+	document.getElementById("bbang").src = k;
+}
+
+
+	</script>
+</body>
+</html>
